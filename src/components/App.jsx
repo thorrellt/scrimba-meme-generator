@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './Header'
+import Meme from './Meme'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <div>
         <Header />
+        <Meme />
       </div>
     </div>
   )

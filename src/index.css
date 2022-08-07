@@ -2,9 +2,7 @@
   font-family: "Karla", sans-serif;
   font-size: 16px;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  
 }
 
 body {
@@ -21,42 +19,58 @@ body {
 
 .App {
   width: 550px;
-  outline: 2px solid white;
+  outline: 2px solid black;
 }
 
-.Header {
+
+.header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  padding-inline: 20px;
 }
 
-.Header>img {
-  width: 31.31px;
-  margin-inline-start: 20px;
+.header--image {
+  height: 27px;
+  margin-right: 6px;
 }
 
-.Header>h2 {
-  font-family: "Karla", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20.7482px;
-  line-height: 24px;
-  letter-spacing: -0.1em;
-
-  color: #FFFFFF;
-
-  margin-inline: 6.69px auto;
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
 }
 
-.Header>h4 {
-  font-family: Inter, sans-serif;
-  font-style: normal;
+.header--project {
+  font-size: 0.75rem;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
+  font-family: Inter, sans-serif;
+}
 
-  color: #FFFFFF;
-  margin-inline-end: 37px;
+main {
+  padding: 36px
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
