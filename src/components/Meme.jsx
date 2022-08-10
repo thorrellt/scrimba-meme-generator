@@ -3,12 +3,16 @@ import memesData from '../memesData'
 
 export default function Meme() {
 
-    const [memeImage, setMemeImage] = useState("")
+    /* state to store meme image.
+       needed b/c text and image will be updated
+       with events. So state will change
+    */
     const [meme, setMeme] = useState({
         topText:"",
         bottomText:"",
         randomImage:"http://i.imgflip.com/1bij.jpg"
     })
+
     const [allMemeImages, setAllMemeImages] = useState(memesData);
     
     function getMemeImage() {
